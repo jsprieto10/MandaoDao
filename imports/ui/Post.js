@@ -9,8 +9,8 @@ import {Route, NavLink, HashRouter} from "react-router-dom";
 
 
 class Post extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
 
     this.state = { isOpen: false };
 
