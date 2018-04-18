@@ -29,10 +29,11 @@ DDPRateLimiter.addRule(chatMessagesInsert, 5, 5000);
 Meteor.methods({
 
   'chatMessages.insert'(text, chatId, un) {
+	  // Colocar un nombre más significativo a los parametros, el nombre "un" es ambiguo
     check(text, String);
     check(chatId, String); 
     check(un, String); 
-    // Make sure the user is logged in before inserting a task
+    // Make sure the user is logged in before inserting a message
     if (! Meteor.user()) {
       throw new Meteor.Error('not-authorized');
     }
