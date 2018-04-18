@@ -9,12 +9,8 @@ import PostAdd from "./PostAdd";
 
 import { Meteor } from 'meteor/meteor'
 
+// Nombre más sígnificativo, el constructor no vale la pena si no hacen nada y pasarle props también si no realmente no le pasan props
 class Stuff extends Component {
-
-
-	constructor(props) {
-		super(props);
-	}
 
 	onVote(post, emoji) {
 
